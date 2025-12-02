@@ -24,7 +24,6 @@ public class ChestMonster : MonoBehaviour
     public Animator animator;
 
 
-    public float enemyDamage = 20f;
     void Start()
     {
         stateMachine = new StateMachine();
@@ -244,7 +243,7 @@ public class ChestMonster : MonoBehaviour
         {
             Debug.Log("Damaging Player");
             PlayerController pc = other.GetComponent<PlayerController>();
-            pc.TakeDamage(enemyDamage);
+            pc.TakeDamage(attackPower);
         }
     }
 
