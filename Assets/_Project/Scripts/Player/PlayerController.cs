@@ -1,11 +1,13 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
     public float health = 100;
     public float moveSpeed = 4f;
     public float turnSpeed = 3f;
+    public float playerDamage = 25f;
     private float currentMoveInputX;
     private float currentMoveInputZ;
     private Animator animator;
@@ -27,6 +29,16 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void TakeDamage(float damage)
+    {
+        health -= damage;
+
+        if (health <= 0)
+        {
+            SceneManager.LoadScene("Game Over");
+        }
     }
 
     private void FixedUpdate()
@@ -62,6 +74,25 @@ public class PlayerController : MonoBehaviour
     public void OnAttack(InputAction.CallbackContext value)
     {
         animator.SetTrigger("Attacking");
-        Debug.Log("Attacking");
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.tag == "Enemy")
+        {
+            Debug.Log("Attacking");
+            ChestMonster monster = collision.collider.GetComponent<ChestMonster>();
+            monster.TakeDamage(playerDamage);
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Enemy")
+        {
+            Debug.Log("Attacking");
+            ChestMonster monster = other.GetComponent<ChestMonster>();
+            monster.TakeDamage(playerDamage);
+        }
     }
 }

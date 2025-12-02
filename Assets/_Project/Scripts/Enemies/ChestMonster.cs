@@ -23,6 +23,8 @@ public class ChestMonster : MonoBehaviour
     public float criticalHealth = 25f;
     public Animator animator;
 
+
+    public float enemyDamage = 20f;
     void Start()
     {
         stateMachine = new StateMachine();
@@ -241,6 +243,25 @@ public class ChestMonster : MonoBehaviour
         if (other.tag == "Player")
         {
             Debug.Log("Damaging Player");
+            PlayerController pc = other.GetComponent<PlayerController>();
+            pc.TakeDamage(enemyDamage);
+        }
+    }
+
+    public void TakeDamage(float damage)
+    {
+        health -= damage;
+
+        if (health <= criticalHealth)
+        {
+            isEvading = true;
+            animator.SetBool("IsAttacking", false);
+            stateMachine.TransitionTo("Evade");
+        }
+
+        if (health <= 0)
+        {
+            stateMachine.TransitionTo("Death");
         }
     }
 
