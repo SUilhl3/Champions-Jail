@@ -58,4 +58,10 @@ public class PlayerController : MonoBehaviour
         }
 
     }
+
+    public void OnAttack(InputAction.CallbackContext value)
+    {
+        animator.SetTrigger("Attacking");
+        Debug.Log("Attacking");
+    }
 }
