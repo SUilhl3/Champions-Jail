@@ -13719,11 +13719,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8133615904736123504, guid: c8411afd93c8a8f40a5d5da55c46e6d8, type: 3}
       propertyPath: patrolPoints.Array.data[0].x
-      value: -11
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 8133615904736123504, guid: c8411afd93c8a8f40a5d5da55c46e6d8, type: 3}
       propertyPath: patrolPoints.Array.data[0].z
-      value: 7
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 8133615904736123504, guid: c8411afd93c8a8f40a5d5da55c46e6d8, type: 3}
       propertyPath: patrolPoints.Array.data[1].x
@@ -13731,11 +13731,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8133615904736123504, guid: c8411afd93c8a8f40a5d5da55c46e6d8, type: 3}
       propertyPath: patrolPoints.Array.data[1].z
-      value: 2
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 8178736431994096109, guid: c8411afd93c8a8f40a5d5da55c46e6d8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.09663
+      value: 9.3
       objectReference: {fileID: 0}
     - target: {fileID: 8178736431994096109, guid: c8411afd93c8a8f40a5d5da55c46e6d8, type: 3}
       propertyPath: m_LocalPosition.y

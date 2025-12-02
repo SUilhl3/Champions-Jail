@@ -105,8 +105,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -142,7 +142,6 @@ MonoBehaviour:
   health: 100
   criticalHealth: 25
   animator: {fileID: 8132928042133168309}
-  enemyDamage: 20
 --- !u!65 &44978941283283121
 BoxCollider:
   m_ObjectHideFlags: 0

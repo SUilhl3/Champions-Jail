@@ -3414,87 +3414,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3306588071803778562, guid: c622fca0bab594e439905231b6de9a44, type: 3}
---- !u!1001 &467252811
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 8133615904736123504, guid: c8411afd93c8a8f40a5d5da55c46e6d8, type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 90055098}
-    - target: {fileID: 8133615904736123504, guid: c8411afd93c8a8f40a5d5da55c46e6d8, type: 3}
-      propertyPath: patrolPoints.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8133615904736123504, guid: c8411afd93c8a8f40a5d5da55c46e6d8, type: 3}
-      propertyPath: patrolPoints.Array.data[0].x
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8133615904736123504, guid: c8411afd93c8a8f40a5d5da55c46e6d8, type: 3}
-      propertyPath: patrolPoints.Array.data[0].z
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8133615904736123504, guid: c8411afd93c8a8f40a5d5da55c46e6d8, type: 3}
-      propertyPath: patrolPoints.Array.data[1].x
-      value: -11
-      objectReference: {fileID: 0}
-    - target: {fileID: 8133615904736123504, guid: c8411afd93c8a8f40a5d5da55c46e6d8, type: 3}
-      propertyPath: patrolPoints.Array.data[1].z
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8178736431994096109, guid: c8411afd93c8a8f40a5d5da55c46e6d8, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -7.5288677
-      objectReference: {fileID: 0}
-    - target: {fileID: 8178736431994096109, guid: c8411afd93c8a8f40a5d5da55c46e6d8, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.051050186
-      objectReference: {fileID: 0}
-    - target: {fileID: 8178736431994096109, guid: c8411afd93c8a8f40a5d5da55c46e6d8, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 7.7123194
-      objectReference: {fileID: 0}
-    - target: {fileID: 8178736431994096109, guid: c8411afd93c8a8f40a5d5da55c46e6d8, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8178736431994096109, guid: c8411afd93c8a8f40a5d5da55c46e6d8, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8178736431994096109, guid: c8411afd93c8a8f40a5d5da55c46e6d8, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8178736431994096109, guid: c8411afd93c8a8f40a5d5da55c46e6d8, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8178736431994096109, guid: c8411afd93c8a8f40a5d5da55c46e6d8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8178736431994096109, guid: c8411afd93c8a8f40a5d5da55c46e6d8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8178736431994096109, guid: c8411afd93c8a8f40a5d5da55c46e6d8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8180797971095293097, guid: c8411afd93c8a8f40a5d5da55c46e6d8, type: 3}
-      propertyPath: m_Name
-      value: SlimePBR Variant
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: c8411afd93c8a8f40a5d5da55c46e6d8, type: 3}
 --- !u!1001 &481176060
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7563,7 +7482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7c324efe3fb9ac449f189f73556a579, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemiesToDefeat: 4
+  enemiesToDefeat: 3
 --- !u!4 &1018989261
 Transform:
   m_ObjectHideFlags: 0
@@ -15193,6 +15112,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7385108351594705830, guid: 67250433ee72ed54f98b7a4ca3f6a96e, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15906,6 +15829,5 @@ SceneRoots:
   - {fileID: 1957896965}
   - {fileID: 849720491}
   - {fileID: 1060849368}
-  - {fileID: 467252811}
   - {fileID: 1018989261}
   - {fileID: 90055097}
