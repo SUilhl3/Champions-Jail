@@ -1,49 +1,4 @@
 using UnityEngine;
-<<<<<<< HEAD
-
-public class PlayerController : MonoBehaviour
-{
-    // Movement
-    public float moveSpeed = 5f;
-    private Rigidbody rb;
-    private Vector3 movementInput;
-
-
-    void Start()
-    {
-        rb = GetComponent<Rigidbody>();
-    }
-
-    void Update()
-    {
-        HandleMovementInput();
-    }
-
-    void FixedUpdate()
-    {
-        MovePlayer();
-    }
-
-    private void HandleMovementInput()
-    {
-        float x = Input.GetAxis("Horizontal");
-        float z = Input.GetAxis("Vertical");
-        movementInput = new Vector3(x, 0f, z).normalized;
-    }
-
-    private void MovePlayer()
-    {
-        if (movementInput.magnitude > 0)
-        {
-            Vector3 targetVelocity = movementInput * moveSpeed;
-            rb.linearVelocity = new Vector3(targetVelocity.x, rb.linearVelocity.y, targetVelocity.z);
-
-            Quaternion targetRotation = Quaternion.LookRotation(movementInput);
-            rb.rotation = Quaternion.Slerp(rb.rotation, targetRotation, Time.fixedDeltaTime * 10f);
-        }
-    }
-}
-=======
 using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
@@ -104,4 +59,3 @@ public class PlayerController : MonoBehaviour
 
     }
 }
->>>>>>> be2f895566d875686654aedfe29da65e9cae5e18
