@@ -22,8 +22,12 @@ public class ChestMonster : MonoBehaviour
     public float health = 100f;
     public float criticalHealth = 25f;
     public Animator animator;
+    private LevelManager levelManager;
 
-
+    private void Awake()
+    {
+        levelManager = FindAnyObjectByType<LevelManager>();
+    }
     void Start()
     {
         stateMachine = new StateMachine();
@@ -96,6 +100,8 @@ public class ChestMonster : MonoBehaviour
         death.onEnter = delegate
         {
             animator.SetBool("IsDead", true);
+            levelManager.EnemyDefeated();
+            Destroy(gameObject);
         };
         death.onStay = delegate
         {
