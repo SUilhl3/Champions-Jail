@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour
     {
         //movement
         Vector3 moveDir = new Vector3(currentMoveInputX, 0f, currentMoveInputZ);
-        rb.linearVelocity = new Vector3(currentMoveInputX, rb.linearVelocity.y, currentMoveInputZ);
+        rb.linearVelocity = new Vector3(currentMoveInputX * moveSpeed, rb.linearVelocity.y, currentMoveInputZ * moveSpeed);
         //rotate character in same direction as moving
         if (moveDir.sqrMagnitude > 0.01f)
         {
