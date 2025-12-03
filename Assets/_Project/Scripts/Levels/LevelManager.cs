@@ -24,13 +24,6 @@ public class LevelManager : MonoBehaviour
 
     void LoadNextLevel()
     {
-        //was not working for some reason just switched to immediately transitioning for now
-        //GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
-        //if (enemies.Length == 0)
-        //{
-        //    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        //}
-
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
