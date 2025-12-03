@@ -12,11 +12,15 @@ public class PlayerController : MonoBehaviour
     private float currentMoveInputZ;
     private Animator animator;
     Rigidbody rb;
+    Healthbar healthbar;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
+        healthbar = GetComponent<Healthbar>();
+        healthbar.slider.maxValue = health;
+        healthbar.slider.value = health;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -34,6 +38,7 @@ public class PlayerController : MonoBehaviour
     public void TakeDamage(float damage)
     {
         health -= damage;
+        healthbar.slider.value = health;
 
         if (health <= 0)
         {

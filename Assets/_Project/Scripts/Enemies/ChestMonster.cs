@@ -23,10 +23,14 @@ public class ChestMonster : MonoBehaviour
     public float criticalHealth = 25f;
     public Animator animator;
     private LevelManager levelManager;
+    Healthbar healthbar;
 
     private void Awake()
     {
         levelManager = FindAnyObjectByType<LevelManager>();
+        healthbar = GetComponent<Healthbar>();
+        healthbar.slider.maxValue = health;
+        healthbar.slider.value = health;
     }
     void Start()
     {
@@ -256,6 +260,7 @@ public class ChestMonster : MonoBehaviour
     public void TakeDamage(float damage)
     {
         health -= damage;
+        healthbar.UpdateHealthBar(health);
 
         if (health <= criticalHealth)
         {
