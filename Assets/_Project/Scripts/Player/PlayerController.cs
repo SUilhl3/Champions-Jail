@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     private Animator animator;
     Rigidbody rb;
     Healthbar healthbar;
+    private bool attacking = false;
 
     private void Awake()
     {
@@ -79,11 +80,12 @@ public class PlayerController : MonoBehaviour
     public void OnAttack(InputAction.CallbackContext value)
     {
         animator.SetTrigger("Attacking");
+        attacking = true;
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.tag == "Enemy")
+        if (collision.collider.tag == "Enemy" && attacking)
         {
             Debug.Log("Attacking");
             ChestMonster monster = collision.collider.GetComponent<ChestMonster>();
@@ -91,13 +93,11 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionExit(Collision collision)
     {
-        if (other.tag == "Enemy")
+        if(collision.collider.tag == "Enemy")
         {
-            Debug.Log("Attacking");
-            ChestMonster monster = other.GetComponent<ChestMonster>();
-            monster.TakeDamage(playerDamage);
+            attacking = false;
         }
     }
 }
