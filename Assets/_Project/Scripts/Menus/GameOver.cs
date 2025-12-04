@@ -1,22 +1,31 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 public class GameOver : MonoBehaviour
 {
+    private float delayBeforeLoad = 1.5f;
     public void onReplay()
     {
-        SceneManager.LoadScene("Level 1");
-        Debug.Log("Restarting game...");    
+        Debug.Log("Playing Sound... \nRestarting game...");
+        StartCoroutine(LoadLevelWithDelay("Level 1"));
     }
 
     public void GoToMainMenu()
     {
-        SceneManager.LoadScene("Main Menu");
-        Debug.Log("Entered main menu screen!");
+        Debug.Log("Playing Sound... \n Entering main menu screen");
+        StartCoroutine(LoadLevelWithDelay("Main Menu"));
     }
 
     public void ExitGame()
     {
         Debug.Log("Quitting Game...");
         Application.Quit();
+    }
+
+    private IEnumerator LoadLevelWithDelay(string sceneName)
+    {
+        yield return new WaitForSeconds(delayBeforeLoad);
+        SceneManager.LoadScene(sceneName);
+
     }
 }
