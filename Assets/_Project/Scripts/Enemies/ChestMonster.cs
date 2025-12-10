@@ -16,6 +16,7 @@ public class ChestMonster : MonoBehaviour
     public float attackPower = 5f;
     public Vector3[] patrolPoints;
     public int currentPatrol;
+    public int points;
 
     public float csCosFOV_2;
     public bool isEvading = false;
@@ -105,6 +106,8 @@ public class ChestMonster : MonoBehaviour
         {
             animator.SetBool("IsDead", true);
             levelManager.EnemyDefeated();
+            PlayerController pc = FindAnyObjectByType<PlayerController>();
+            pc.AddPoints(points);
             Destroy(gameObject);
         };
         death.onStay = delegate

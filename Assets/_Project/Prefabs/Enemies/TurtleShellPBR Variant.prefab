@@ -493,6 +493,7 @@ MonoBehaviour:
   - {x: 3, y: 0, z: 5}
   - {x: 8, y: 0, z: 2}
   currentPatrol: 0
+  points: 50
   csCosFOV_2: 0
   isEvading: 0
   health: 100

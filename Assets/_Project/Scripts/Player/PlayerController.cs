@@ -1,6 +1,8 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class PlayerController : MonoBehaviour
 {
@@ -14,6 +16,8 @@ public class PlayerController : MonoBehaviour
     Rigidbody rb;
     Healthbar healthbar;
     private bool attacking = false;
+    private int playerPoints = 0;
+    [SerializeField] private TMP_Text pointsText;
 
     private void Awake()
     {
@@ -22,18 +26,13 @@ public class PlayerController : MonoBehaviour
         healthbar = GetComponent<Healthbar>();
         healthbar.slider.maxValue = health;
         healthbar.slider.value = health;
+        pointsText.text = playerPoints.ToString();
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void AddPoints(int points)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        playerPoints += points;
+        pointsText.text = playerPoints.ToString();
     }
 
     public void TakeDamage(float damage)
