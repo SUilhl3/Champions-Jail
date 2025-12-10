@@ -992,8 +992,12 @@ PrefabInstance:
       value: NGF_Env_Stone_doorway_02 (2)
       objectReference: {fileID: 0}
     - target: {fileID: 5336746328774189461, guid: 64940af26033b8f4cbf03a9e4c4f8f1d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5336746328774189461, guid: 64940af26033b8f4cbf03a9e4c4f8f1d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 38.190063
+      value: 37.79898
       objectReference: {fileID: 0}
     - target: {fileID: 5336746328774189461, guid: 64940af26033b8f4cbf03a9e4c4f8f1d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6218,8 +6222,12 @@ PrefabInstance:
       value: NGF_Env_Stone_doorway_02 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 5336746328774189461, guid: 64940af26033b8f4cbf03a9e4c4f8f1d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5336746328774189461, guid: 64940af26033b8f4cbf03a9e4c4f8f1d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.310062
+      value: 9.264062
       objectReference: {fileID: 0}
     - target: {fileID: 5336746328774189461, guid: 64940af26033b8f4cbf03a9e4c4f8f1d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8644,8 +8652,12 @@ PrefabInstance:
       value: NGF_Env_Stone_doorway_04
       objectReference: {fileID: 0}
     - target: {fileID: 4414365509483122244, guid: 7e725651e0c0d0b418152e280bb00731, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4414365509483122244, guid: 7e725651e0c0d0b418152e280bb00731, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.402063
+      value: 9.448064
       objectReference: {fileID: 0}
     - target: {fileID: 4414365509483122244, guid: 7e725651e0c0d0b418152e280bb00731, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10544,8 +10556,12 @@ PrefabInstance:
       value: NGF_Env_Stone_doorway_02 (4)
       objectReference: {fileID: 0}
     - target: {fileID: 5336746328774189461, guid: 64940af26033b8f4cbf03a9e4c4f8f1d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5336746328774189461, guid: 64940af26033b8f4cbf03a9e4c4f8f1d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 33.432198
+      value: 33.43226
       objectReference: {fileID: 0}
     - target: {fileID: 5336746328774189461, guid: 64940af26033b8f4cbf03a9e4c4f8f1d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10553,7 +10569,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5336746328774189461, guid: 64940af26033b8f4cbf03a9e4c4f8f1d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.48003
+      value: -7.4930162
       objectReference: {fileID: 0}
     - target: {fileID: 5336746328774189461, guid: 64940af26033b8f4cbf03a9e4c4f8f1d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11108,8 +11124,12 @@ PrefabInstance:
       value: NGF_Env_Stone_doorway_04 (4)
       objectReference: {fileID: 0}
     - target: {fileID: 4414365509483122244, guid: 7e725651e0c0d0b418152e280bb00731, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4414365509483122244, guid: 7e725651e0c0d0b418152e280bb00731, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 33.344097
+      value: 33.344036
       objectReference: {fileID: 0}
     - target: {fileID: 4414365509483122244, guid: 7e725651e0c0d0b418152e280bb00731, type: 3}
       propertyPath: m_LocalPosition.y
@@ -11117,7 +11137,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4414365509483122244, guid: 7e725651e0c0d0b418152e280bb00731, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.4544907
+      value: -7.4415216
       objectReference: {fileID: 0}
     - target: {fileID: 4414365509483122244, guid: 7e725651e0c0d0b418152e280bb00731, type: 3}
       propertyPath: m_LocalRotation.w
@@ -13094,8 +13114,12 @@ PrefabInstance:
       value: NGF_Env_Stone_doorway_04 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 4414365509483122244, guid: 7e725651e0c0d0b418152e280bb00731, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4414365509483122244, guid: 7e725651e0c0d0b418152e280bb00731, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.284063
+      value: 9.271064
       objectReference: {fileID: 0}
     - target: {fileID: 4414365509483122244, guid: 7e725651e0c0d0b418152e280bb00731, type: 3}
       propertyPath: m_LocalPosition.y
@@ -15059,8 +15083,12 @@ PrefabInstance:
       value: NGF_Env_Stone_doorway_02 (3)
       objectReference: {fileID: 0}
     - target: {fileID: 5336746328774189461, guid: 64940af26033b8f4cbf03a9e4c4f8f1d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5336746328774189461, guid: 64940af26033b8f4cbf03a9e4c4f8f1d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.310062
+      value: 9.264062
       objectReference: {fileID: 0}
     - target: {fileID: 5336746328774189461, guid: 64940af26033b8f4cbf03a9e4c4f8f1d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -18096,8 +18124,12 @@ PrefabInstance:
       value: NGF_Env_Stone_doorway_04 (2)
       objectReference: {fileID: 0}
     - target: {fileID: 4414365509483122244, guid: 7e725651e0c0d0b418152e280bb00731, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4414365509483122244, guid: 7e725651e0c0d0b418152e280bb00731, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 38.164066
+      value: 37.746986
       objectReference: {fileID: 0}
     - target: {fileID: 4414365509483122244, guid: 7e725651e0c0d0b418152e280bb00731, type: 3}
       propertyPath: m_LocalPosition.y
@@ -18876,6 +18908,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!4 &1186247108 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8762202315463775972, guid: ac07a3174f41a424fafb81ebe3bc94fe, type: 3}
+  m_PrefabInstance: {fileID: 1186247098}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1188743627
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20469,8 +20506,12 @@ PrefabInstance:
       value: NGF_Env_Stone_doorway_04 (3)
       objectReference: {fileID: 0}
     - target: {fileID: 4414365509483122244, guid: 7e725651e0c0d0b418152e280bb00731, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4414365509483122244, guid: 7e725651e0c0d0b418152e280bb00731, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.402063
+      value: 9.448064
       objectReference: {fileID: 0}
     - target: {fileID: 4414365509483122244, guid: 7e725651e0c0d0b418152e280bb00731, type: 3}
       propertyPath: m_LocalPosition.y
@@ -24677,6 +24718,7 @@ GameObject:
   - component: {fileID: 1543372525}
   - component: {fileID: 1543372524}
   - component: {fileID: 1543372527}
+  - component: {fileID: 1543372528}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -24724,10 +24766,10 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 200
   field of view: 60
-  orthographic: 0
-  orthographic size: 5
+  orthographic: 1
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -24752,7 +24794,7 @@ Transform:
   m_GameObject: {fileID: 1543372523}
   serializedVersion: 2
   m_LocalRotation: {x: 0.58718634, y: -0, z: -0, w: 0.8094519}
-  m_LocalPosition: {x: 8.25, y: 43.86, z: -20.05}
+  m_LocalPosition: {x: 3.25, y: 47.274666, z: -9.593421}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -24802,6 +24844,21 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &1543372528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543372523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77f2188859d539846bd4d131acc4811c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1186247108}
+  height: 10
+  speed: 5
 --- !u!1001 &1550011966
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26294,8 +26351,12 @@ PrefabInstance:
       value: NGF_Env_Stone_doorway_02
       objectReference: {fileID: 0}
     - target: {fileID: 5336746328774189461, guid: 64940af26033b8f4cbf03a9e4c4f8f1d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5336746328774189461, guid: 64940af26033b8f4cbf03a9e4c4f8f1d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.310062
+      value: 9.323062
       objectReference: {fileID: 0}
     - target: {fileID: 5336746328774189461, guid: 64940af26033b8f4cbf03a9e4c4f8f1d, type: 3}
       propertyPath: m_LocalPosition.y
