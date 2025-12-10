@@ -13,24 +13,39 @@ public class SoundManager : MonoBehaviour
 {
     [SerializeField] private SoundList[] soundList;
     private static SoundManager instance;
-    private AudioSource AudioSource;
+    private AudioSource audioSource;
 
+    private const string SfxVolumeKey = "sfxVolume";//
+    public static float SfxVolume = 1f;//
     private void Awake()
     {
         instance = this;
+
+        SfxVolume = PlayerPrefs.GetFloat(SfxVolumeKey, 1f);//
+        DontDestroyOnLoad(gameObject);//
     }
 
     private void Start()
     {
-        AudioSource = GetComponent<AudioSource>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     public static void PlaySound(SoundType sound, float volume = 1)
     {
         AudioClip[] clips = instance.soundList[(int)sound].Sounds;
         AudioClip randomClip = clips[UnityEngine.Random.Range(0, clips.Length)];
-        instance.AudioSource.PlayOneShot(randomClip, volume);
+
+        float finalVolume = volume * SfxVolume;//
+
+        instance.audioSource.PlayOneShot(randomClip, finalVolume);
     }
+
+    public static void SaveSfxVolume(float value)//
+    {
+        SfxVolume = value;
+        PlayerPrefs.SetFloat(SfxVolumeKey, value);
+        PlayerPrefs.Save();
+    }//
 
 #if UNITY_EDITOR
     private void OnEnable()
