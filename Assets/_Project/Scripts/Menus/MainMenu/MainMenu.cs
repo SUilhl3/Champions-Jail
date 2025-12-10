@@ -1,6 +1,6 @@
+using UnityEngine;
 using System.Collections;
 using System.Runtime.CompilerServices;
-using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
@@ -15,8 +15,8 @@ public class MainMenu : MonoBehaviour
 
     public void ExitGame()
     {
-            Debug.Log("Quitting Game...");
-            Application.Quit();
+        Debug.Log("Quitting Game...");
+        Application.Quit();
     }
     private IEnumerator LoadLevelWithDelay(string sceneName)
     {
@@ -26,4 +26,3 @@ public class MainMenu : MonoBehaviour
 
     }
 }
-
