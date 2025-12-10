@@ -788,7 +788,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5057067963452943173, guid: df8d948e87a1ad54e99ab130b3089147, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 232342857}
   m_SourcePrefab: {fileID: 100100000, guid: df8d948e87a1ad54e99ab130b3089147, type: 3}
 --- !u!1001 &184715994
 PrefabInstance:
@@ -1006,6 +1009,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3976083337271540025, guid: 458e2a07bd55bc247ba42aee92b9aae1, type: 3}
   m_PrefabInstance: {fileID: 202901592}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &232342852 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5057067963452943173, guid: df8d948e87a1ad54e99ab130b3089147, type: 3}
+  m_PrefabInstance: {fileID: 177508211}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &232342857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232342852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d9666434ea604346a45f6721cf11646, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeSlider: {fileID: 0}
+  audioSource: {fileID: 984425169}
 --- !u!1 &260277078 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3704552207477596797, guid: ac07a3174f41a424fafb81ebe3bc94fe, type: 3}
@@ -3522,6 +3544,11 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -3707336404954314496, guid: cafccd2a2261537448eb24cbffbab876, type: 3}
+--- !u!82 &984425169 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6939526825033008473, guid: f8dbf1485b72dbb4aa83c374f66b1ac0, type: 3}
+  m_PrefabInstance: {fileID: 4472306711442154139}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &990205572
 PrefabInstance:
   m_ObjectHideFlags: 0
