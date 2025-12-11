@@ -510,7 +510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75a190c6a3c0c8341830cfe692c1e0c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 3704552207477596797, guid: ac07a3174f41a424fafb81ebe3bc94fe, type: 3}
   distanceToChase: 10
   InFront: 0
   distanceToAttack: 2

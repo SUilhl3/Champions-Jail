@@ -6,6 +6,24 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     private float delayBeforeLoad = 1.5f;
+
+    public void SetDifficultyEasy()
+    {
+        GameManager.instance.currentDifficulty = GameManager.Difficulty.Easy;
+        Debug.Log("Setting to easy...");
+    }
+
+    public void SetDifficultyMedium()
+    {
+        GameManager.instance.currentDifficulty = GameManager.Difficulty.Medium;
+        Debug.Log("Setting to medium...");
+    }
+
+    public void SetDifficultyHard()
+    {
+        GameManager.instance.currentDifficulty = GameManager.Difficulty.Hard;
+        Debug.Log("Setting to hard...");
+    }
     public void OnNewGameClicked()
     {
         Debug.Log("Playing Sound...");
