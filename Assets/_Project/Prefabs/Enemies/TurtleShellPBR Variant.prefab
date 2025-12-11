@@ -486,7 +486,7 @@ MonoBehaviour:
   FOV: 60
   patrolSpeed: 1
   chaseSpeed: 2
-  evadeSpeed: 3
+  evadeSpeed: 2
   attackPower: 5
   patrolPoints:
   - {x: 0, y: 0, z: 0}
