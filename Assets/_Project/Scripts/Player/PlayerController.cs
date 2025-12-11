@@ -6,7 +6,8 @@ using UnityEngine.UIElements;
 
 public class PlayerController : MonoBehaviour
 {
-    public float health = 100;
+    public float currentHealth = 100;
+    public float maxHealth = 100;
     public float moveSpeed = 4f;
     public float turnSpeed = 3f;
     public float playerDamage = 25f;
@@ -24,8 +25,8 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
         healthbar = GetComponent<Healthbar>();
-        healthbar.slider.maxValue = health;
-        healthbar.slider.value = health;
+        healthbar.slider.maxValue = maxHealth;
+        UpdateHealthbar();
         pointsText.text = playerPoints.ToString();
     }
 
@@ -35,12 +36,30 @@ public class PlayerController : MonoBehaviour
         pointsText.text = playerPoints.ToString();
     }
 
+    public void AddHealth(float healthIncrease)
+    {
+        if ((maxHealth - currentHealth) < healthIncrease)
+        {
+            currentHealth = maxHealth;
+        }
+        else if (currentHealth < maxHealth)
+        {
+            currentHealth += healthIncrease;
+        }
+    }
+
+    public void UpdateHealthbar()
+    {
+        healthbar.slider.value = currentHealth;
+
+    }
+
     public void TakeDamage(float damage)
     {
-        health -= damage;
-        healthbar.slider.value = health;
+        currentHealth -= damage;
+        UpdateHealthbar();
 
-        if (health <= 0)
+        if (currentHealth <= 0)
         {
             SceneManager.LoadScene("Game Over");
         }
