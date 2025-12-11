@@ -11,6 +11,7 @@ public class HealthPickup : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (other.gameObject.tag != "Player") return;
         pc.AddHealth(healthIncrease);
         pc.UpdateHealthbar();
         Destroy(gameObject);

@@ -11,6 +11,7 @@ public class ScorePickup : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (other.gameObject.tag != "Player") return;
         pc.AddPoints(scoreIncrease);
         Destroy(gameObject);
     }
