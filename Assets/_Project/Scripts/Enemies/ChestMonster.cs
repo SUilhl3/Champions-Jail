@@ -23,15 +23,16 @@ public class ChestMonster : MonoBehaviour
     public float health = 100f;
     public float criticalHealth = 25f;
     public Animator animator;
-    private LevelManager levelManager;
+    public  DifficultyLevelManager levelManager;
     Healthbar healthbar;
 
     private void Awake()
     {
-        levelManager = FindAnyObjectByType<LevelManager>();
+        levelManager = FindAnyObjectByType<DifficultyLevelManager>();
         healthbar = GetComponent<Healthbar>();
         healthbar.slider.maxValue = health;
         healthbar.slider.value = health;
+        player = FindAnyObjectByType<PlayerController>().gameObject;
     }
     void Start()
     {

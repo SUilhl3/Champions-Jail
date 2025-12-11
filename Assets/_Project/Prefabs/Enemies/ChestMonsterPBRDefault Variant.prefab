@@ -522,7 +522,7 @@ MonoBehaviour:
   patrolSpeed: 1
   chaseSpeed: 2
   evadeSpeed: 2
-  attackPower: 5
+  attackPower: 15
   patrolPoints: []
   currentPatrol: 0
   points: 100
@@ -531,6 +531,7 @@ MonoBehaviour:
   health: 100
   criticalHealth: 25
   animator: {fileID: 6274332404673894833}
+  levelManager: {fileID: 0}
 --- !u!54 &661963036102936965
 Rigidbody:
   m_ObjectHideFlags: 0
